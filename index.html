@@ -84,9 +84,9 @@
 
       <div class="social-links">
           <!-- <a href="https://www.github.com/rajaprerak" target="_blank" class="github"><i class="bx bxl-github"></i></a> -->
-          <a href="https://www.linkedin.com/in/ayanpatel98/" target="_blank"class="linkedin"><i class="bx bxl-linkedin"></i></a>
-          <a href="https://github.com/ayanpatel98" class="github"><i class="bx bxl-github"></i></a>
-          <a href="mailto:ayanpatel_98@yahoo.com" class="google"><i class="bx bxl-yahoo"></i></a>
+          <a href="https://www.linkedin.com/in/ayanpatel98/" target="_blank" title="linkedin" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/ayanpatel98" title="github" class="github"><i class="bx bxl-github"></i></a>
+          <a href="mailto:ayanpatel_98@yahoo.com" title="yahoo" class="yahoo"><i class="bx bxl-yahoo"></i></a>
 
       </div>
 
@@ -143,25 +143,25 @@
         <div class="col-lg-3 col-md-4">
           <div class="icon-box">
             <i class="ri-global-line" style="color: #ffbb2c;"></i>
-            <h3>Software Development</h3>
+            <h3>Web Development</h3>
           </div>
         </div>
-        <div class="col-lg-3 col-md-4">
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
           <div class="icon-box">
-            <i class="ri-file-list-3-line" style="color: #47aeff;"></i>
-            <h3>Algorithms</h3>
+            <i class="ri-code-s-slash-fill" style="color: #28a745;"></i>
+            <h3>Data Structures and Algorithms</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class="ri-stack-line" style="color: #47aeff;"></i>
+            <h3>Full-Stack Development</h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
           <div class="icon-box">
             <i class="ri-database-2-line" style="color: #5578ff;"></i>
             <h3>Machine Learning</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4">
-          <div class="icon-box">
-            <i class="ri-code-s-slash-fill" style="color: #28a745;"></i>
-            <h3>Software Engineering</h3>
           </div>
         </div>
         <!-- <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
@@ -212,10 +212,11 @@
               <h6 style="text-align:left;color:#fff;padding: 0px 10px;">Relevant Coursework</h6>
               <ul style="text-align:left;color:#fff;">
                 <li>Data Structures</li>
-                <li>Algorithms &amp; Design of Algorithms</li>
+                <li>Analysis &amp; Design of Algorithms</li>
                 <li>Database Management Systems</li>
                 <li>Operating Systems</li>
                 <li>Artificial Intelligence</li>
+                <li>Object Oriented programming with Java</li>
               </ul>
             </div>
           </div>
@@ -622,9 +623,9 @@
             <i class="bx bx-share-alt"></i>
             <h3>Social Profiles</h3>
             <div class="social-links">
-              <a href="https://www.linkedin.com/in/ayanpatel98/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              <a href="https://github.com/ayanpatel98" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-              <a href="mailto:ayanpatel_98@yahoo.com" target="_blank"><i class="bx bxl-yahoo"></i></a>
+              <a href="https://www.linkedin.com/in/ayanpatel98/" target="_blank" title="linkedin" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              <a href="https://github.com/ayanpatel98" title="github" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+              <a href="mailto:ayanpatel_98@yahoo.com" title="yahoo" target="_blank"><i class="bx bxl-yahoo"></i></a>
 
             </div>
           </div>
@@ -646,11 +647,37 @@
           </div>
         </div>
       </div>
-      <!-- <div id="sfczmlqxr5caww28rswrt8849ghbekgnh3j" ></div><script type="text/javascript" src="https://counter1.stat.ovh/private/counter.js?c=zmlqxr5caww28rswrt8849ghbekgnh3j&down=async" async></script><noscript><a href="https://www.freecounterstat.com" title="free web counter"><img src="https://counter1.stat.ovh/private/freecounterstat.php?c=zmlqxr5caww28rswrt8849ghbekgnh3j" border="0" title="free web counter" alt="free web counter" style="visibility: none;"></a></noscript> -->
+
+      <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="col-md-6 form-group mt-3 mt-md-0">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+          </div>
+        </div>
+        <div class="form-group mt-3">
+          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+        </div>
+        <div class="form-group mt-3">
+          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+        </div>
+        <div class="my-3">
+          <div class="loading">Loading</div>
+          <div class="error-message"></div>
+          <div class="sent-message">Your message has been sent. Thank you!</div>
+        </div>
+        <div class="text-center"><button type="submit">Send Message</button></div>
+      </form>
     </div>
   </section>
 
   <!-- End Contact Section -->
+
+  <div class="credits">
+    Designed by <a href="#">Ayan</a>
+  </div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
@@ -665,7 +692,7 @@
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script type="text/javascript">
     var typed = new Typed('.typing',{
-      strings: ["Coder", "Developer", "AI Enthusiast"],
+      strings: ["Coder !", "Developer !", "Gamer !"],
       loop: true,
       typeSpeed: 65,
       backSpeed: 65
