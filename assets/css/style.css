@@ -1077,11 +1077,14 @@ section .container {
 --------------------------------------------------------------*/
 .credits {
   position: fixed;
-  right: 15px;
-  bottom: 15px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 15px;
+  text-align: right;
   font-size: 13px;
   color: #fff;
-  z-index: 1;
+  z-index: 999999;
 }
 
 .credits a {
